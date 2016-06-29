@@ -3,6 +3,7 @@
 {-# LANGUAGE TemplateHaskell     #-}
 module ThreadDelayInSeconds
    ( threadDelayInSeconds
+   , threadDelayInMilliseconds
    ) where
 
 import Control.Concurrent
@@ -13,3 +14,9 @@ us = fromIntegral . toMicroseconds
 
 threadDelayInSeconds :: Int -> IO ()
 threadDelayInSeconds = threadDelay . us . fromIntegral
+
+ms :: Millisecond -> Int
+ms = fromIntegral . toMicroseconds
+
+threadDelayInMilliseconds :: Int -> IO ()
+threadDelayInMilliseconds = threadDelay . ms . fromIntegral
