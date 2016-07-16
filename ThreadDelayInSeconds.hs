@@ -4,8 +4,6 @@
 module ThreadDelayInSeconds
    ( threadDelayInSeconds
    , threadDelayInMilliseconds
-   , Millisecond
-   , Microsecond
    ) where
 
 import Control.Concurrent
