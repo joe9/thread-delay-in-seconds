@@ -1,6 +1,5 @@
 {-# OPTIONS_GHC -Wall #-}
-{-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE TemplateHaskell     #-}
+
 module ThreadDelayInSeconds
    ( threadDelayInSeconds
    , threadDelayInMilliseconds
